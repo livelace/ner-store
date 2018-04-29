@@ -8,7 +8,7 @@ from datetime import datetime
 from flask import Flask, abort, request, json, make_response, send_file, render_template
 from langdetect import detect
 
-DB_PATH = "/home/user/downloads/ner-store.sqlite3"
+DB_PATH = "/tmp/db.sqlite3"
 
 
 def add_record(text, language, url, timestamp):
