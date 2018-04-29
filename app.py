@@ -60,7 +60,6 @@ if not os.path.exists(DB_PATH):
                 timestamp INTEGER NOT NULL
             )
         ''')
-        results = cursor.fetchall()
         conn.commit()
     except Exception as e:
         print("ERROR: Cannot initialize database: {}".format(e))
